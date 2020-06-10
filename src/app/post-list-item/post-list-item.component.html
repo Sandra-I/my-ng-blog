@@ -1,0 +1,31 @@
+<div class="row">
+  <li class="list-group-item">
+    <!-- Ligne contenant le titre et la date de création de l'article -->
+    <div class="row">
+      <div class="col-xs-8">
+        <p class="h1">{{titre}}</p>
+      </div>
+      <div class="col-xs-4">
+        <p class="small pull-right">{{createDate | date: 'short'}}</p>
+      </div>
+    </div>
+
+    <!-- Le contenu de l'article -->
+    <div class="row">
+      <div class="col-xs-12">
+        <p>{{contenu}}</p>
+      </div>
+    </div>
+
+    <!-- Les boutons j'aime et j'aimes pas à relier avec un ngClass -->
+    <div class="row">
+      <button type="button" class="btn btn-success col-xs-6">
+        J'aime
+      </button>
+      <button type="button" class="btn btn-danger col-xs-6">
+        J'aime pas
+      </button>
+    </div>
+
+  </li>
+</div>

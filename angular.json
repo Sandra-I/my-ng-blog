@@ -49,6 +49,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -144,6 +145,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-ng-blog"
+    }
+  },
+  "defaultProject": "my-ng-blog",
+  "cli": {
+    "analytics": false
+  }
 }
