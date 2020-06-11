@@ -5,8 +5,8 @@
 
       <!-- List group de tous les posts -->
       <ul class="list-group">
-        <!-- Affichage de la liste des posts -->
-        <app-post-list *ngFor="let post of posts" [postArray]="getPosts()"></app-post-list>
+        <!-- Passage de la liste des posts à afficher -->
+        <app-post-list [postArray]="getPosts()"></app-post-list>
       </ul>
     </div>
   </div>
