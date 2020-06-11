@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  // Tableau des posts
   posts = [
     {
       title: "Article 1",
@@ -28,6 +29,7 @@ export class AppComponent {
     }
   ]
 
+  // Méthode retournant le tableau
   getPosts() {
     return this.posts;
   }

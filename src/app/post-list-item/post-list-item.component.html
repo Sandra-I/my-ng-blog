@@ -1,5 +1,7 @@
 <div class="row">
-  <li class="list-group-item">
+  <li class="list-group-item"
+   [ngClass]="postColor()"
+   >
     <!-- Ligne contenant le titre et la date de création de l'article -->
     <div class="row">
       <div class="col-xs-8">
@@ -16,13 +18,23 @@
         <p>{{content}}</p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <p>Nombre de j'aime : {{loveIts}}</p>
+      </div>
+      <div class="col-xs-6">
+        <p>Nombre de j'aime pas : {{dontLoveIts}}</p>
+      </div>
+    </div>
 
     <!-- Les boutons j'aime et j'aimes pas à relier avec un ngClass -->
     <div class="row">
-      <button type="button" class="btn btn-success col-xs-6">
+      <button type="button" class="btn btn-success col-xs-6"
+       (click)="onLike()">
         J'aime
       </button>
-      <button type="button" class="btn btn-danger col-xs-6">
+      <button type="button" class="btn btn-danger col-xs-6"
+      (click)="onDislike()">
         J'aime pas
       </button>
     </div>
